@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+body{
+    background: rgba(238, 174, 174, 0.476);
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 40px;
+    text-shadow: 1px 1px 2px red;
+}
+.container{
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    background-color: rgb(87, 39, 108);
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 15px;
+    line-height: 30px;
+    color: white;
+    outline: none;
+}
+textarea:hover{
+    box-shadow:3px 3px 5px 5px rgba(190, 117, 210, 0.6);
+
+}
+textarea::placeholder{
+    color: white;
+    opacity: .6;
+}
+p{
+    display: inline;
+    color: black;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+button {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 15px;
+    padding: 12px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 39, 104);
+    color: white;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+button:hover {
+    background-color: #ff0b0b;
+    box-shadow: 2px 2px 5px rgb(240, 255, 37);
+}
+@media (max-width:400px) {
+    h1{
+        font-size: 2.3rem;
+        padding: 0 5px;
+    }
+    body{
+        overflow: hidden;
+    }
+    .container{
+        width: 90%;
+    }
+    p{
+        font-size: 16px;
+        margin-left: 20px;
+
+    }
+    button{
+        padding: 10px 30px;
+        margin-right:25px;
+    }
+}
